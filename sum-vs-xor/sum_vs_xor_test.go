@@ -9,6 +9,8 @@ func TestSumXor(t *testing.T) {
 	}{
 		{input: 5, expected: 2},
 		{input: 10, expected: 4},
+		{input: 0, expected: 0},
+		{input: 1, expected: 1},
 	}
 	for _, test := range tests {
 		if output := sumXor(test.input); output != test.expected {
